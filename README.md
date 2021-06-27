@@ -66,6 +66,6 @@ Click on Create pull request.
 
 Congratulations🎉, you have made a Pull Request !!
 
-Guys this is Sudeep, I had made this statement by following the steps! and updated the file..!
+Guys this is Sudeep, I had made this statement by following the steps! and updated the file..
 
 Hello! This is Bava Viknesh! Please work kadavule!
