@@ -5,7 +5,7 @@ body {
     font-size: 1.2rem;
 }
 header {
-    background-color: lime;
+    background-color: rgba(0, 175, 0, 0.5);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -22,7 +22,7 @@ li{
     margin: 28px 30px;
 }
 #login {
-    margin-left: 25%;
+    margin-left: 35%;
 }
 .navlink {
     text-decoration: none;
@@ -55,14 +55,16 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
     background-color: red;
-    padding: 15px;
+    color: ghostwhite;
+    padding: 10px;
     border-radius: 5px;
     text-decoration: none;
     transition: padding 1s;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 .bookbt:hover {
-    padding: 20px;
+    padding: 15px;
+    color: lightgreen;
 }
 .one::after,
 .one::before {
