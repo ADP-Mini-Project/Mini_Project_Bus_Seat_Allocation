@@ -56,3 +56,10 @@ input{
 input:hover{
     background-color: #f7d28a;
 }
+
+button{
+    background-color: #ffc145;
+    border: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
