@@ -1,0 +1,120 @@
+
+body {                
+    color: #FFFFFB;   
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+header {
+    background-color: rgba(0, 175, 0, 0.5);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;          
+}
+.logo {
+    color: black;
+} 
+ul{
+    display: flex;
+    list-style-type:none;
+}
+li{
+    margin: 28px 30px;
+}
+#login {
+    margin-left: 35%;
+}
+.navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    transition: font-size 0.5s;
+}
+.navlink:hover {
+    color: black;
+    font-size: 18pt;
+}
+section {
+    padding: 30vh 0;
+}
+.one {
+    background-color: #FFC145;
+    position: relative;
+}
+.bookIcon {
+    width: 70%;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    background-color: rgba(50, 102, 180, 0.7);
+}
+.bookbt {
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+    background-color: red;
+    color: ghostwhite;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: padding 1s;
+    font-size: 14pt;
+}
+.bookbt:hover {
+    padding: 15px;
+    color: lightgreen;
+}
+.one::after,
+.one::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #FFC145;
+    bottom: -15px;
+    z-index: 50;
+}
+.one::after {
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+.one::before {
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+.two {
+    background-color: #FF6B6C;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+    margin-bottom: -10vw;
+}
+.twoImage {
+    /* clip-path: circle(50% at 50% 50%); */
+    /* clip-path: polygon(50% 50%, 100% 100%, 0% 100%);triangle */
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.three {
+    background-color: #5B5F97;
+}
+table,td{
+    border: 1px solid white;
+    background-color: rgb(3, 3, 158);
+    border-collapse: collapse;
+    column-gap: 30%; 
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    column-width: 200px;
+}
+input{
+    font-size: 11pt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(54, 54, 218);
+    border-bottom-color: white;
+    color: white;
+}

@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Just a trial Web page</title>
+        <title>Ticket Booking</title>
         <meta charset="UTF-8">
         <meta viewport="width=content-width,initial-scale=1.0">
         <link rel = "stylesheet" href = "index.css">
+        <script type = "text/javascript" src = "project.js"></script>
     </head>
-    <script type = "text/javascript" src = "project.js"></script>
-    <body>
-        <h1>THis is just a test heading(to be modified)</h1>
-    </body>
+    
+<body>
+    <header>
+        
+        <nav>
+            
+            <ul>
+                <h1 class="logo">Busbooking.com</h1>
+                <li><a href="#" class="navlink">MANAGE</a></li>
+                <li><a href="#" class="navlink">OFFERS</a></li>
+                <li id="login"><a href="#" class="navlink">Login</a></li>
+                <li id="signup"><a href="#" class="navlink">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="one">
+        
+            <h1 style="text-align: center;">BOOK A BUS</h1>
+            <div class="bookIcon">
+                <form>
+                    <table class="frmto">
+                        <tr><td>FROM</td><td>TO</td><td>DATE</td></tr>
+                        <tr><td><input list="from" size="20">
+                            <datalist id="from" name="from">
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                </datalist>
+                        </td><td><input list="to" size="20">
+                            <datalist id="to" name="to">
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                </datalist>
+                        </td><td>
+                            <input type="date" name="travel_date">
+                        </td></tr>
+                    </table>
+                    <br>
+                    <center><a class="bookbt" href="#">BOOK TICKETS</a></center>
+                </form>
+            </div>
+            
+        
+    </section>
+    <section class="two">
+        <h1 style="text-align: center;">One of the best bus booking services</h1>
+        <center>
+            <img src="images/bus.jpeg" alt="omg" class="twoImage">
+        </center>
+    </section>
+    <section class="three">
+        <h1 style="text-align: center;">Section three</h1>
+    </section>
+</body>
 </html>
