@@ -58,6 +58,7 @@
         else{
             echo "Ins Error" . mysqli_error($login);
         }
+        header("location: index.html");
         mysqli_close($login);
         ?>
     </body>
