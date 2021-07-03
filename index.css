@@ -1,6 +1,5 @@
 body{
     background-color: navy;
-    /*background-image:url("backimg2.jpg");*/
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin:0;
 }
@@ -72,13 +71,6 @@ form{
     padding:10px;
 }
 
-.interchange-icon::before
-{
-    content:"\21CB";
-    color:black;
-    font-size:30px;
-    padding:4px;
-}
 #btninter
 {
     background-color:white;
