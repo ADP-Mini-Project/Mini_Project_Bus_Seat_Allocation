@@ -7,61 +7,49 @@
         <link rel = "stylesheet" href = "index.css">
         <script type = "text/javascript" src = "project.js"></script>
     </head>
-    
-<body>
-    <header>
-        
-        <nav>
-            
-            <ul>
-                <h1 class="logo">Busbooking.com</h1>
-                <li><a href="#" class="navlink">MANAGE</a></li>
-                <li><a href="#" class="navlink">OFFERS</a></li>
-                <li id="login"><a href='login.html' class="navlink">Login</a></li>
-                <li id="signup"><a href='register.html' class="navlink">Sign Up</a></li>
-            </ul>
-        </nav>
+    <body>
+      <header>
+    <nav>
+        <ul> 
+          <li id="Signup"><a href="#">Sign Up</a></li>
+          <li><a href = "#">Login</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href = "#">Manage</a></li>
+        </ul>
+    </nav>
     </header>
-    <section class="one">
-        
-            <h1 style="text-align: center;">BOOK A BUS</h1>
-            <div class="bookIcon">
-                <form>
-                    <table class="frmto">
-                        <tr><td>FROM</td><td>TO</td><td>DATE</td></tr>
-                        <tr><td><input list="from" size="20">
-                            <datalist id="from" name="from">
-                                <option value="Chennai">Chennai</option>
-                                <option value="Bangalore">Bangalore</option>
-                                <option value="Coimbatore">Coimbatore</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                </datalist>
-                        </td><td><input list="to" size="20">
-                            <datalist id="to" name="to">
-                                <option value="Chennai">Chennai</option>
-                                <option value="Bangalore">Bangalore</option>
-                                <option value="Coimbatore">Coimbatore</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                                </datalist>
-                        </td><td>
-                            <input type="date" name="travel_date">
-                        </td></tr>
-                    </table>
-                    <br>
-                    <center><a class="bookbt" href="#">BOOK TICKETS</a></center>
-                </form>
-            </div>
-            
-        
-    </section>
-    <section class="two">
-        <h1 style="text-align: center;">One of the best bus booking services</h1>
-        <center>
-            <img src="images/bus.jpeg" alt="omg" class="twoImage">
-        </center>
-    </section>
-    <section class="three">
-        <h1 style="text-align: center;">Section three</h1>
-    </section>
-</body>
+
+        <section>
+        <h1 style = "color:white; text-align:center;font-size:30px;">Bus Ticket Booking</h1>
+        <span style = "color:white;">Travelling with a group? Hire a bus!</span><br>
+        <div class = "book-container">
+          <form action = "getformdata.php" method = "POST" target = "_self">
+    <label for = "from">From:</label>
+      <input list = "from" name = "from" id = "fromwhere" placeholder = "Enter Source">
+          <datalist id = "from">
+            <option value = "Coimbatore"></option>
+            <option value = "Erode"></option>
+            <option value = "Chennai"></option>
+            <option value = "KanyaKumari"></option>
+            <option value = "Bangalore"></option>
+          </datalist><!--<button id = "btninter"><icon class = "interchange-icon"></icon></button>-->
+    &nbsp;&nbsp;<label for = "to">To:</label>
+    <input list = "to" name = "to" placeholder = "Enter Destination">
+        <datalist id = "to" >
+          <option value = "Coimbatore"></option>
+          <option value = "Erode"></option>
+          <option value = "Chennai"></option>
+          <option value = "KanyaKumari"></option>
+          <option value = "Bangalore"></option>
+      </datalist>
+      <label for = "date">Travel Date:</label>
+      <input type = "date" name = "date"><br><br>
+<center>
+ <input type = "Submit" id = "search" value = "Search Buses">
+</center>
+      </form>
+    </div>
+  </section>
+    </body>
+    <script type = "text/javascript" src = "project.js"></script>
 </html>
