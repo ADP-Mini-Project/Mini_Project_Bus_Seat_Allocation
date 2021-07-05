@@ -28,6 +28,11 @@
                     break;
                 }
             }
+            if(1){
+                echo "<style>body{background-color:navy;}</style><br><h1 style='text-align:center;color:#FFC145;'>Wrong Password or Invalid MailID</h1>";
+                header("refresh: 2; url=login.html");
+            }
+
         }
         else{
             echo "<br>Sorry Coudn't Connect" . mysqli_error($login);
