@@ -23,7 +23,7 @@ $count = 1;
 echo "<span style = 'font-size:20px;color:black;'>".$from." -> ".$to."</span>";
 echo "&nbsp;&nbsp;&nbsp;&nbsp;<span style = 'font-size:20px'> ".$date." </span>";
 ?>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class = "reset" onclick = "location.href = 'index.html'">Reset</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class = "reset" onclick = "location.href = 'home.html'">Reset</button>
     
 </div>
 <?php
