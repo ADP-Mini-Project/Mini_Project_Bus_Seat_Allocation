@@ -12,10 +12,11 @@
             echo "<h2>Couldn't Connect</h2>. ";
         }
 
-        $_SESSION = $_POST["fname"];
-        $_SESSION = $_POST["lname"];
-        $_SESSION = $_POST["email"];
-        $_SESSION = $_POST["pass"];
+        $_SESSION["fname"] = $_POST["fname"];
+        $_SESSION["lname"] = $_POST["lname"];
+        $_SESSION["email"] = $_POST["email"];
+        $_SESSION["pass"] = $_POST["pass"];
+
 
         $regdb = "CREATE DATABASE registration";
 
@@ -35,7 +36,8 @@
         $regtble = "CREATE TABLE Register (fname VARCHAR(20) NOT NULL,
         lname VARCHAR(20) NOT NULL,
         email VARCHAR(40) NOT NULL,
-        pass VARCHAR(15) NOT NULL)";
+        pass VARCHAR(15) NOT NULL,
+        ticket VARCHAR(500) NOT NULL)";
 
         if(mysqli_query($login,$regtble)){
             ;
@@ -58,7 +60,7 @@
         else{
             echo "Ins Error" . mysqli_error($login);
         }
-        header("location: index.html");
+        header("location: home.html");
         mysqli_close($login);
         ?>
     </body>
