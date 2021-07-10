@@ -88,8 +88,8 @@ form{
 
 }
 .twoImage {
-    /* clip-path: circle(50% at 50% 50%); */
-    /* clip-path: polygon(50% 50%, 100% 100%, 0% 100%);triangle */
+    clip-path: circle(50% at 50% 50%);
+    clip-path: polygon(50% 50%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .three {
@@ -102,7 +102,7 @@ form{
     width: 100px;
     height: 100px;
     background-color: navy;
-    bottom: -100px;
+    bottom: 60px;
     z-index: 50;
 }
 .one::after {
