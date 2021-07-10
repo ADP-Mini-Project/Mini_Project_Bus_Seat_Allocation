@@ -60,7 +60,7 @@ if(mysqli_num_rows($res) > 0)
         echo "<td>".str_replace(":00.000000"," ",$disp['EndTime'])."</td>";
         echo "<td>".$disp["Fare"]."</td>";
         echo "<td> 24 </td>";
-        echo "<td colspan='7'><button class = 'book'>Book Seats</button></td>";
+        echo "<td colspan='7'><button class = 'book' onclick = "location.href='login.html'">Book Seats</button></td>";
         echo "</tr>";
        
         $count+=1;
