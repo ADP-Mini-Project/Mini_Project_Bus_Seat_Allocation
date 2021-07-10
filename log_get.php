@@ -24,7 +24,7 @@
             while($find = mysqli_fetch_assoc($check)){
                 if(($emaillog == $find["email"])&&($passlog == $find["pass"])){
                     echo "Successful";
-                    header("location: index.html");
+                    header("location: home.html");
                     break;
                 }
             }

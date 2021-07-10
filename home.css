@@ -102,7 +102,7 @@ form{
     width: 100px;
     height: 100px;
     background-color: navy;
-    bottom: 60px;
+    bottom: -130px;
     z-index: 50;
 }
 .one::after {
